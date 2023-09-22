@@ -8,5 +8,7 @@ export default function errorHandler(error, req: Request, res: Response, next: N
     return res.status(httpStatus.NOT_FOUND).send(error.message);
   }
 
+  console.log(error);
+
   return res.status(httpStatus.INTERNAL_SERVER_ERROR).send("Sorry, something went wrong 😢");
 }

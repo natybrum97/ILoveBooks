@@ -3,6 +3,7 @@ export type Review = {
   bookId: number;
   review: string;
   grade: number;
+  cover: string;
 };
 
 export type CreateReview = Omit<Review, "id">;
